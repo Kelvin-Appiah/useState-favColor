@@ -1,6 +1,6 @@
 .main,
 .card {
-  height: 100vh;
+  height: 85vh;
   width: 80vw;
   margin: auto auto;
   position: relative;
@@ -14,7 +14,7 @@
 .title {
   color: #ffff;
   position: relative;
-  left: 22vw;
+  left: 20vw;
 }
 
 .colorBox {
