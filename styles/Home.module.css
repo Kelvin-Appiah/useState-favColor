@@ -1,1 +1,79 @@
+.main,
+.card {
+  height: 100vh;
+  width: 80vw;
+  margin: auto auto;
+  position: relative;
+}
 
+.card {
+  border: 1px solid #000;
+  background-color: rgba(17, 39, 35, 100%);
+}
+
+.title {
+  color: #ffff;
+  position: relative;
+  left: 22vw;
+}
+
+.colorBox {
+  border: 1px solid #ffff;
+  color: #ffff;
+  margin: 2rem;
+  width: fit-content;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+  left: 6vw;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-height: 70vh;
+  padding: 2rem 5rem;
+}
+
+.btn {
+  flex-basis: 20%;
+}
+
+.red,
+.blue,
+.green,
+.gold,
+.pink,
+.orange,
+.black {
+  color: aliceblue;
+}
+
+.red {
+  background: #ff0000;
+}
+
+.blue {
+  background: #001aff;
+}
+
+.green {
+  background: #159800;
+}
+
+.gold {
+  background: #d1bc00;
+}
+
+.pink {
+  background: #ff0099;
+}
+
+.orange {
+  background: #d34c00;
+}
+
+.black {
+  background: #000000;
+}
