@@ -1,72 +1,80 @@
 import styles from '../styles/Home.module.css';
-import { useState } from 'react';
+
 import Button from '../components/buttons/button';
 
+import { useState } from 'react';
+
 export default function Home() {
-  const [color, setColor] = useState('choose a color from below:');
-
-  const RedButtonHandler = () => {
-    setColor('RED');
-  };
-
-  const BlueButtonHandler = () => {
-    setColor('BLUE');
-  };
-
-  const GreenButtonHandler = () => {
-    setColor('GREEN');
-  };
-
-  const GoldButtonHandler = () => {
-    setColor('GOLD');
-  };
-
-  const PinkButtonHandler = () => {
-    setColor('PINK');
-  };
-
-  const OrangeButtonHandler = () => {
-    setColor('ORANGE');
-  };
-
-  const BlackButtonHandler = () => {
-    setColor('BLACK');
-  };
-
-  const WhiteButtonHandler = () => {
-    setColor('WHITE');
-  };
+  const [color, setColor] = useState('COLOR');
   return (
     <div className={styles.main}>
       <h1>Select FavColor</h1>
       <div className={styles.card}>
-        <h3 className={styles.title}>My favorite color is</h3>
-        <div className={styles.colorBox}>
-          <h4>{color}</h4>
-        </div>
+        <h2 style={{ color: '#fff' }}>My favorite color is</h2>
+        <div className={styles.colorBox}>{color}</div>
         <section className={styles.buttons}>
-          <Button onClick={RedButtonHandler} classname={styles.red}>
+          <Button
+            classname={styles.red}
+            onClick={() => {
+              setColor('RED');
+            }}
+          >
             RED
           </Button>
-          <Button onClick={BlueButtonHandler} classname={styles.blue}>
+          <Button
+            classname={styles.blue}
+            onClick={() => {
+              setColor('BLUE');
+            }}
+          >
             BLUE
           </Button>
-          <Button onClick={GreenButtonHandler} classname={styles.green}>
+          <Button
+            classname={styles.green}
+            onClick={() => {
+              setColor('GREEN');
+            }}
+          >
             GREEN
           </Button>
-          <Button onClick={GoldButtonHandler} classname={styles.gold}>
+          <Button
+            classname={styles.gold}
+            onClick={() => {
+              setColor('GOLD');
+            }}
+          >
             GOLD
           </Button>
-          <Button onClick={PinkButtonHandler} classname={styles.pink}>
+          <Button
+            classname={styles.pink}
+            onClick={() => {
+              setColor('PINK ');
+            }}
+          >
             PINK
           </Button>
-          <Button onClick={OrangeButtonHandler} classname={styles.orange}>
+          <Button
+            classname={styles.orange}
+            onClick={() => {
+              setColor('ORANGE');
+            }}
+          >
             ORANGE
           </Button>
-          <Button onClick={BlackButtonHandler} classname={styles.black}>
+          <Button
+            classname={styles.black}
+            onClick={() => {
+              setColor('BLACK');
+            }}
+          >
             BLACK
           </Button>
-          <Button onClick={WhiteButtonHandler} classname={styles.white}>
+          <Button
+            classname={styles.white}
+            onClick={() => {
+              setColor('WHITE');
+            }}
+          >
             WHITE
           </Button>
         </section>
