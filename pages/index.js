@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 export default function Home() {
   const [color, setColor] = useState('COLOR');
+
   return (
     <div className={styles.main}>
       <h1>Select FavColor</h1>

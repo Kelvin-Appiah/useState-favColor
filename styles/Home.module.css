@@ -6,8 +6,8 @@
 }
 
 .card {
-  height: 55vh;
-  width: 50vw;
+  min-height: 85vh;
+  width: 90vw;
   border: 1px solid #000;
   background-color: rgba(17, 39, 35, 100%);
 
@@ -26,12 +26,11 @@
 
 .buttons {
   /*  border: 1px solid #000; */
-  height: 25vh;
-  width: 40vw;
-  display: flex;
-  flex-flow: column wrap;
-  align-content: space-around;
-  align-items: center;
+  /* height: 25vh;
+  width: 40vw; */
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3rem;
 }
 
 .red,
@@ -70,4 +69,12 @@
 
 .black {
   background: #000000;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+  .buttons {
+    grid-template-columns: auto auto auto auto;
+  }
 }
